@@ -1,0 +1,79 @@
+# Huw Edwards Training - robots.txt
+# An explicit policy for every class of crawler, including AI answer engines.
+
+# ---------------------------------------------------------------------------
+# Search engines
+# ---------------------------------------------------------------------------
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+# ---------------------------------------------------------------------------
+# AI answer engines and assistants.
+# These are the crawlers that decide whether Hamatethy is named when someone
+# asks an assistant "large holiday house in Cornwall that sleeps 14" or
+# "where can I watch wild beavers in the UK". Allowing them is a deliberate
+# marketing decision, not an oversight.
+# ---------------------------------------------------------------------------
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+User-agent: meta-externalagent
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+# ---------------------------------------------------------------------------
+# Everything else
+# ---------------------------------------------------------------------------
+User-agent: *
+Allow: /
+Disallow: /*?s=
+Disallow: /*?replytocom=
+
+Sitemap: https://huwedwardstraining.com/sitemap.xml
