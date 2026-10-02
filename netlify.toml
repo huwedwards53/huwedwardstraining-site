@@ -15,3 +15,41 @@
   for = "/assets/*"
   [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"
+
+# One address for search engines and visitors: everything forwards to
+# https://huwedwardstraining.com, keeping the path.
+[[redirects]]
+  from = "https://huwedwardstraining.co.uk/*"
+  to = "https://huwedwardstraining.com/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "http://huwedwardstraining.co.uk/*"
+  to = "https://huwedwardstraining.com/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://www.huwedwardstraining.co.uk/*"
+  to = "https://huwedwardstraining.com/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "http://www.huwedwardstraining.co.uk/*"
+  to = "https://huwedwardstraining.com/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://www.huwedwardstraining.com/*"
+  to = "https://huwedwardstraining.com/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "http://www.huwedwardstraining.com/*"
+  to = "https://huwedwardstraining.com/:splat"
+  status = 301
+  force = true
