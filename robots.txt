@@ -18,10 +18,9 @@ Allow: /
 
 # ---------------------------------------------------------------------------
 # AI answer engines and assistants.
-# These are the crawlers that decide whether Hamatethy is named when someone
-# asks an assistant "large holiday house in Cornwall that sleeps 14" or
-# "where can I watch wild beavers in the UK". Allowing them is a deliberate
-# marketing decision, not an oversight.
+# These crawlers decide whether Huw is named when someone asks an assistant
+# who trains university researchers in policy engagement. Allowing them is a
+# deliberate decision, not an oversight.
 # ---------------------------------------------------------------------------
 User-agent: OAI-SearchBot
 Allow: /
