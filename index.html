@@ -23,6 +23,9 @@
 
 <script>document.documentElement.className+=" js";</script>
 <link rel="preload" as="image" href="assets/img/westminster.webp" fetchpriority="high">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 64 64%27%3E%3Crect width=%2764%27 height=%2764%27 rx=%276%27 fill=%27%230B5C3B%27/%3E%3Ctext x=%2732%27 y=%2743%27 font-family=%27Georgia,serif%27 font-size=%2730%27 font-weight=%27700%27 fill=%27%23F8F7F3%27 text-anchor=%27middle%27%3EHE%3C/text%3E%3C/svg%3E">
+<link rel="preload" as="font" type="font/woff2" href="assets/fonts/source-serif.woff2" crossorigin>
+<link rel="preload" as="font" type="font/woff2" href="assets/fonts/public-sans.woff2" crossorigin>
 <link rel="stylesheet" href="assets/site.css">
 
 <script type="application/ld+json">
@@ -133,38 +136,66 @@
 </script>
 </head>
 <body>
-<a class="skip" href="#course">Skip to the course</a>
+<a class="skip" href="#main">Skip to the main content</a>
 
 <header class="masthead">
   <div class="masthead__inner">
-    <a class="wordmark" href="/">Huw Edwards <span style="display:inline;font-size:.72em;letter-spacing:.1em;color:var(--green);font-weight:700">MBE</span><span>Research impact and policy engagement</span></a>
+    <a class="wordmark" href="/">Huw Edwards <span class="wordmark__hon">MBE</span><span class="wordmark__sub">Research impact and policy engagement</span></a>
     <nav class="nav" aria-label="Primary">
       <span class="nav__links">
-        <a href="#course">The course</a>
         <a href="#impact">Impact</a>
+        <a href="#course">The course</a>
         <a href="#experience">Experience</a>
         <a href="#recent">Recent courses</a>
         <a href="#questions">Questions</a>
       </span>
+      <details class="menu">
+        <summary>Contents</summary>
+        <ol>
+          <li><a href="#impact">Impact in practice</a></li>
+          <li><a href="#course">The course</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#recent">Recent courses</a></li>
+          <li><a href="#questions">Questions</a></li>
+          <li><a href="#enquire">Enquiries</a></li>
+        </ol>
+      </details>
       <a class="btn" href="#enquire">Enquire</a>
     </nav>
   </div>
 </header>
 
-<main>
+<main id="main">
   <section class="hero">
     <div class="shell">
-      <div class="hero__grid">
-        <div>
-          <p class="label rule-label">Research impact &middot; Policy engagement &middot; Universities</p>
-          <h1>Getting research in front of <em>the people who make policy</em>.</h1>
-          <p class="lede">Huw Edwards MBE is the Industry and Parliament Trust's Training Consultant for universities. A former MP for Monmouth and university Senior Lecturer in Social Policy, he trains researchers to promote their work to Parliament and policymakers, and supports universities as they prepare for the next REF.</p>
-          <div class="hero__cta">
+      <div class="hero__labels">
+        <p class="label">Training for university researchers</p>
+        <p class="label label--quiet">Research impact and policy engagement</p>
+      </div>
+      <div class="hero__top">
+        <h1><span class="l">Getting research in front of</span> <span class="l"><em>the people who make policy</em>.</span></h1>
+        <div class="hero__intro">
+          <p class="lede hero__lede">Huw Edwards MBE trains university researchers to promote their work to Parliament and policymakers. He is the Industry and Parliament Trust's Training Consultant for universities, a former MP for Monmouth and a former Senior Lecturer in Social Policy.</p>
+          <div class="actions hero__cta">
             <a class="btn" href="#enquire">Enquire about a course</a>
-            <a class="btn btn--ghost" href="#course">See the course</a>
+            <a class="btn btn--ghost" href="#impact">See the impact</a>
           </div>
         </div>
-        <figure class="plate plate--hero reveal">
+      </div>
+
+      <div class="hero__cover">
+        <nav class="contents" aria-label="Contents">
+          <p class="label">Contents</p>
+          <ol>
+            <li><a href="#impact"><span class="n">1</span><span class="t"><span>Impact in practice</span></span><span class="r">Eight steps</span></a></li>
+            <li><a href="#course"><span class="n">2</span><span class="t"><span>The course</span></span><span class="r">Four modules</span></a></li>
+            <li><a href="#experience"><span class="n">3</span><span class="t"><span>Experience</span></span><span class="r">1991 to today</span></a></li>
+            <li><a href="#recent"><span class="n">4</span><span class="t"><span>Recent courses</span></span><span class="r">Plates 4 to 8</span></a></li>
+            <li><a href="#questions"><span class="n">5</span><span class="t"><span>Questions</span></span><span class="r">Six answers</span></a></li>
+            <li><a href="#enquire"><span class="n">6</span><span class="t"><span>Enquiries</span></span><span class="r">Telephone and email</span></a></li>
+          </ol>
+        </nav>
+        <figure class="plate plate--hero" style="--r:4/3;--pos:50% 55%">
           <img src="assets/img/westminster.webp" width="844" height="633" fetchpriority="high" decoding="async"
                alt="A group of university researchers with Huw Edwards on the steps inside the Palace of Westminster, beneath a large stained glass window.">
           <figcaption><b>At Westminster</b>University researchers on a course at the UK Parliament.</figcaption>
@@ -179,8 +210,36 @@
         <div class="stat reveal"><b>8</b><span>Years a Select Committee member</span></div>
         <div class="stat reveal"><b>5</b><span>Universities where he lectured in social policy</span></div>
         <div class="stat reveal"><b>2005</b><span>Training consultant since</span></div>
-        <div class="stat reveal"><b>MBE</b><span>New Year Honours 2024</span></div>
-        <div class="stat reveal"><b>IPT</b><span>Training Consultant for universities</span></div>
+        <div class="stat reveal"><b>2024</b><span>Appointed MBE, New Year Honours</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--tint" id="impact">
+    <div class="shell">
+      <div class="section__head reveal">
+        <p class="label rule-label">Impact in practice</p>
+        <h2>From a training course to a Westminster Hall debate</h2>
+        <p class="lede">One researcher's route from a policy engagement course to research cited in Parliament.</p>
+      </div>
+      <div class="split split--rev">
+        <aside class="sticky reveal">
+          <div class="profile">
+            <p class="label">The researcher</p>
+            <p>A Senior Lecturer in Psychology at Manchester Metropolitan University, researching chronic pain in long&#8209;term health conditions such as endometriosis.</p>
+          </div>
+          <p class="prose sidenote">Each step built on the one before: training gave her the map, coaching turned it into a plan, and a clear briefing gave her MP something to act on.</p>
+        </aside>
+        <ol class="hansard reveal">
+          <li><span class="what">Attended a Research Impact and Policy Engagement course.</span><span class="where">Course</span></li>
+          <li><span class="what">A one-to-one coaching session with Huw, and an action plan.</span><span class="where">Coaching</span></li>
+          <li><span class="what">Prepared briefing papers on her research with her university.</span><span class="where">University</span></li>
+          <li><span class="what">Contacted her MP, and spoke at a Westminster reception.</span><span class="where">Westminster</span></li>
+          <li><span class="what">Her MP tabled Parliamentary Questions on endometriosis.</span><span class="where">Commons</span></li>
+          <li><span class="what">Her work was cited in an Early Day Motion on endometriosis care.</span><span class="where">Commons</span></li>
+          <li><span class="what">Gave evidence to a Women and Equalities Select Committee inquiry, and was mentioned in its report.</span><span class="where">Committee</span></li>
+          <li><span class="what">Her MP referred to her work in a Westminster Hall debate on endometriosis, April 2026.</span><span class="where">Westminster Hall</span></li>
+        </ol>
       </div>
     </div>
   </section>
@@ -193,8 +252,8 @@
         <p class="lede">Training that supports university researchers in promoting their work to Parliament and policymakers, from engaging with MPs and Select Committees to briefing civil servants and Ministers.</p>
       </div>
 
-      <div class="themes reveal" aria-label="The approach">
-        <p class="label">The approach</p>
+      <div class="themes reveal">
+        <h3 class="label">The approach</h3>
         <ol>
           <li>Every research subject has a policy focus.</li>
           <li>Engaging with Parliament and policymakers is essential, despite the difficulties.</li>
@@ -203,141 +262,65 @@
         </ol>
       </div>
 
-      <div class="curriculum reveal">
-        <article class="module">
-          <div>
-            <p class="module__no">Parliament</p>
-            <h3>Where the scrutiny happens</h3>
-          </div>
-          <ul>
-            <li>How Government Bills pass through the Commons and the Lords</li>
-            <li>Oral and written Parliamentary Questions, and how to draft them</li>
-            <li>Select Committee inquiries: written evidence, giving evidence as a witness, and advising a committee</li>
-            <li>Early Day Motions and All-Party Parliamentary Groups</li>
-            <li>House of Lords select committees and special inquiries</li>
-            <li>Hansard, the Commons and Lords Libraries, POST and the Knowledge Exchange Unit</li>
-          </ul>
-        </article>
-        <article class="module">
-          <div>
-            <p class="module__no">Government</p>
-            <h3>Where policy is made</h3>
-          </div>
-          <ul>
-            <li>Identifying the key departments, Ministers and public bodies for your work</li>
-            <li>How civil servants advise and Ministers decide</li>
-            <li>Responding to government consultations</li>
-            <li>Working with departmental Chief Scientific Advisers</li>
-            <li>Areas of Research Interest: where government is asking for research</li>
-            <li>Advisory groups, scientific advisory committees and working in the civil service</li>
-          </ul>
-        </article>
-        <article class="module">
-          <div>
-            <p class="module__no">Briefing MPs</p>
-            <h3>What do you want me to do?</h3>
-          </div>
-          <ul>
-            <li>What an MP looks for: constituency, political and campaigning interests</li>
-            <li>A two-page briefing that leads with the killer facts</li>
-            <li>A clear answer to the question every MP asks: what do you want me to do?</li>
-            <li>The MP's toolkit: letters, meetings with Ministers, questions, motions and debates</li>
-            <li>Print, broadcast and social media</li>
-          </ul>
-        </article>
-        <article class="module">
-          <div>
-            <p class="module__no">Devolution</p>
-            <h3>Four nations, many routes</h3>
-          </div>
-          <ul>
-            <li>The parliaments and governments of Scotland, Wales and Northern Ireland</li>
-            <li>What is and is not devolved</li>
-            <li>Metro Mayors and Mayoral Combined Authorities in England</li>
-          </ul>
-        </article>
-        <article class="module">
-          <div>
-            <p class="module__no">Who it is for</p>
-            <h3>Researchers at every stage</h3>
-          </div>
-          <ul>
-            <li>Early Career Researchers</li>
-            <li>Senior Researchers</li>
-            <li>Groups across academic disciplines</li>
-            <li>Specialist research institutes, with a tailored course</li>
-          </ul>
-        </article>
-        <article class="module">
-          <div>
-            <p class="module__no">Where it runs</p>
-            <h3>Parliament, campus or online</h3>
-          </div>
-          <ul>
-            <li>At the UK Parliament</li>
-            <li>At your university</li>
-            <li>Online</li>
-          </ul>
-        </article>
-      </div>
-
-      <div class="split" style="margin-top:clamp(2.5rem,5vw,4rem)">
-        <figure class="plate reveal">
-          <img src="assets/img/teaching-760.webp"
-               srcset="assets/img/teaching-760.webp 760w, assets/img/teaching-1200.webp 1200w"
-               sizes="(min-width: 920px) 44vw, 92vw"
-               width="760" height="570" loading="lazy" decoding="async"
-               alt="Researchers working at laptops around tables in a seminar room during one of Huw's courses.">
-          <figcaption><b>In the seminar room</b>Researchers at work during a course session.</figcaption>
-        </figure>
-        <div class="reveal">
-          <h3 style="font-size:var(--s-2);margin-bottom:.9rem">How it works</h3>
-          <p class="prose">Courses can be delivered for groups of Early Career and Senior Researchers and across academic disciplines, or tailored for specialist research institutes. They are held at the UK Parliament, at a university and online.</p>
-          <p class="prose">Participants learn how to navigate the parliamentary record and government structures, and leave with a sharper policy focus for their work.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section section--tint" id="impact">
-    <div class="shell">
-      <div class="section__head reveal">
-        <p class="label rule-label">Impact in practice</p>
-        <h2>From a training course to a Westminster Hall debate</h2>
-        <p class="lede">One researcher's route from a policy engagement course to research cited in Parliament.</p>
-      </div>
       <div class="split">
-        <div class="reveal">
-          <div class="profile">
-            <p class="label">The researcher</p>
-            <p>A Senior Lecturer in Psychology at Manchester Metropolitan University, researching chronic pain in long-term health conditions such as endometriosis.</p>
-          </div>
-          <p class="prose" style="margin-top:1.4rem">Each step built on the one before: training gave her the map, coaching turned it into a plan, and a clear briefing gave her MP something to act on.</p>
+        <div class="curriculum reveal">
+          <article class="module">
+            <div>
+              <p class="module__no">Parliament</p>
+              <h3>Where the scrutiny happens</h3>
+            </div>
+            <ul>
+              <li>How Government Bills pass through the Commons and the Lords</li>
+              <li>Oral and written Parliamentary Questions, and how to draft them</li>
+              <li>Select Committee inquiries: written evidence, giving evidence as a witness, and advising a committee</li>
+              <li>Early Day Motions and All-Party Parliamentary Groups</li>
+              <li>House of Lords select committees and special inquiries</li>
+              <li>Hansard, the Commons and Lords Libraries, POST and the Knowledge Exchange Unit</li>
+            </ul>
+          </article>
+          <article class="module">
+            <div>
+              <p class="module__no">Government</p>
+              <h3>Where policy is made</h3>
+            </div>
+            <ul>
+              <li>Identifying the key departments, Ministers and public bodies for your work</li>
+              <li>How civil servants advise and Ministers decide</li>
+              <li>Responding to government consultations</li>
+              <li>Working with departmental Chief Scientific Advisers</li>
+              <li>Areas of Research Interest: where government is asking for research</li>
+              <li>Advisory groups, scientific advisory committees and working in the civil service</li>
+            </ul>
+          </article>
+          <article class="module">
+            <div>
+              <p class="module__no">Briefing MPs</p>
+              <h3>What do you want me to do?</h3>
+            </div>
+            <ul>
+              <li>What an MP looks for: constituency, political and campaigning interests</li>
+              <li>A two-page briefing that leads with the killer facts</li>
+              <li>A clear answer to the question every MP asks: what do you want me to do?</li>
+              <li>The MP's toolkit: letters, meetings with Ministers, questions, motions and debates</li>
+              <li>Print, broadcast and social media</li>
+            </ul>
+          </article>
+          <article class="module">
+            <div>
+              <p class="module__no">Devolution</p>
+              <h3>Four nations, many routes</h3>
+            </div>
+            <ul>
+              <li>The parliaments and governments of Scotland, Wales and Northern Ireland</li>
+              <li>What is and is not devolved</li>
+              <li>Metro Mayors and Mayoral Combined Authorities in England</li>
+            </ul>
+          </article>
         </div>
-        <ol class="steps reveal">
-          <li>Attended a Research Impact and Policy Engagement course.</li>
-          <li>A one-to-one coaching session with Huw, and an action plan.</li>
-          <li>Prepared briefing papers on her research with her university.</li>
-          <li>Contacted her MP, and spoke at a Westminster reception.</li>
-          <li>Her MP tabled Parliamentary Questions on endometriosis.</li>
-          <li>Her work was cited in an Early Day Motion on endometriosis care.</li>
-          <li>Gave evidence to a Women and Equalities Select Committee inquiry, and was mentioned in its report.</li>
-          <li>Her MP referred to her work in a Westminster Hall debate on endometriosis, April 2026.</li>
-        </ol>
-      </div>
-    </div>
-  </section>
-
-  <section class="pull">
-    <div class="shell">
-      <div class="split">
-        <blockquote class="reveal">Participants learn how to navigate the parliamentary record and government structures and give their work a sharper policy focus.
-          <cite>From the course aims</cite>
-        </blockquote>
-        <figure class="plate reveal">
+        <figure class="plate sticky reveal" style="--r:4/3;--pos:50% 50%">
           <img src="assets/img/sheffield.webp" width="760" height="570" loading="lazy" decoding="async"
                alt="Huw Edwards with a group of researchers standing around tables in a modern seminar room, with a presentation on screen.">
-          <figcaption><b>Sheffield</b>A course at Sheffield Medical School, June 2026.</figcaption>
+          <figcaption><b>Sheffield</b>A course at Sheffield Medical School, June 2026. Courses run at the UK Parliament, on campus or online, for Early Career and Senior Researchers.</figcaption>
         </figure>
       </div>
     </div>
@@ -348,24 +331,30 @@
       <div class="section__head reveal">
         <p class="label rule-label">Experience</p>
         <h2>A researcher and a parliamentarian</h2>
+        <p class="lede">A career that has moved between the university and the House of Commons.</p>
       </div>
       <div class="split">
-        <ol class="track reveal">
-          <li><b>University of York</b><strong>Postgraduate research</strong><span>MA and MPhil.</span></li>
-          <li><b>Coventry, Sheffield, London South Bank, Manchester Met and Brighton</b><strong>Lecturer and Senior Lecturer in Social Policy</strong><span>His work on inequality and low pay contributed to the campaign for a national minimum wage.</span></li>
-          <li><b>1991</b><strong>Elected MP for Monmouth</strong><span>First elected as Labour MP for Monmouth following a by-election in May 1991. After the 1992 General Election he returned to the University of Brighton as Senior Lecturer in Social Policy.</span></li>
-          <li><b>1997 to 2005</b><strong>Re-elected MP for Monmouth</strong><span>Served as a Select Committee member for eight years, and on the National Minimum Wage Bill Committee.</span></li>
-          <li><b>2005 to today</b><strong>Training consultant</strong><span>Training on Parliament, Legislation, Democratic Governance and Devolution, now specialising in Research Impact and Policy Engagement training for university researchers.</span></li>
-          <li><b>2024</b><strong>Appointed MBE</strong><span>New Year Honours, for services to music and charity with Monmouth Male Voice Choir.</span></li>
-          <li><b>Today</b><strong>Industry and Parliament Trust</strong><span>IPT's Training Consultant for universities, and Practitioner Researcher at the University of Wales, Lampeter, where his doctoral research is <em>Wales and Westminster: the parliamentary debate on devolution from the 1880s to the 1990s</em>.</span></li>
-        </ol>
-        <div class="reveal">
-          <figure class="plate plate--inline">
-            <img src="assets/img/huw-portrait.webp" width="500" height="667" loading="lazy" decoding="async"
-                 alt="Portrait of Huw Edwards, smiling, in a dark checked shirt against a wooden wall.">
-            <figcaption><b>Huw Edwards MBE</b>Training Consultant for universities, Industry and Parliament Trust.</figcaption>
-          </figure>
-        </div>
+        <table class="tracks reveal">
+          <caption class="visually-hidden">Huw Edwards's career, by year, in Parliament and in universities</caption>
+          <thead>
+            <tr><th scope="col">Year</th><th scope="col"><span class="dot dot--parl"></span>Parliament</th><th scope="col"><span class="dot dot--uni"></span>University</th></tr>
+          </thead>
+          <tbody>
+            <tr><th scope="row">Earlier</th><td class="parl"></td><td class="uni" data-label="University"><strong>Postgraduate research</strong>University of York, MA and MPhil.</td></tr>
+            <tr><th scope="row">Earlier</th><td class="parl"></td><td class="uni" data-label="University"><strong>Lecturer and Senior Lecturer in Social Policy</strong>Coventry, Sheffield, London South Bank, Manchester Met and Brighton. His work on inequality and low pay contributed to the campaign for a national minimum wage.</td></tr>
+            <tr><th scope="row">1991</th><td class="parl" data-label="Parliament"><strong>Elected MP for Monmouth</strong>First elected as Labour MP at a by-election in May 1991.</td><td class="uni"></td></tr>
+            <tr><th scope="row">1992</th><td class="parl"></td><td class="uni" data-label="University"><strong>Back to Brighton</strong>After the 1992 General Election, returned to the University of Brighton as Senior Lecturer in Social Policy.</td></tr>
+            <tr><th scope="row">1997 to 2005</th><td class="parl" data-label="Parliament"><strong>Re-elected MP for Monmouth</strong>A Select Committee member for eight years, and on the National Minimum Wage Bill Committee.</td><td class="uni"></td></tr>
+            <tr class="both"><th scope="row">2005 to today</th><td colspan="2" data-label="Training"><strong>Training consultant</strong>Parliament, Legislation, Democratic Governance and Devolution, now specialising in Research Impact and Policy Engagement training for university researchers.</td></tr>
+            <tr class="both"><th scope="row">2024</th><td colspan="2" data-label="Honours"><strong>Appointed MBE</strong>New Year Honours, for services to music and charity with Monmouth Male Voice Choir.</td></tr>
+            <tr class="both"><th scope="row">Today</th><td colspan="2" data-label="Today"><strong>Industry and Parliament Trust, and Lampeter</strong>IPT's Training Consultant for universities, and Practitioner Researcher at the University of Wales, Lampeter, where his doctoral research is &lsquo;Wales and Westminster: the parliamentary debate on devolution from the 1880s to the 1990s&rsquo;.</td></tr>
+          </tbody>
+        </table>
+        <figure class="plate plate--portrait sticky reveal" style="--r:3/4;--pos:50% 35%">
+          <img src="assets/img/huw-portrait.webp" width="500" height="667" loading="lazy" decoding="async"
+               alt="Portrait of Huw Edwards, smiling, in a dark checked shirt against a wooden wall.">
+          <figcaption><b>Huw Edwards MBE</b>Training Consultant for universities, Industry and Parliament Trust.</figcaption>
+        </figure>
       </div>
     </div>
   </section>
@@ -378,25 +367,33 @@
         <p class="lede">A selection of recent courses and sessions with university researchers.</p>
       </div>
       <div class="gallery reveal">
-        <figure class="plate">
+        <figure class="plate g7" style="--r:3/2;--pos:50% 45%">
           <img src="assets/img/hull.webp" width="760" height="428" loading="lazy" decoding="async"
                alt="Huw Edwards presenting to researchers seated at laptops in a University of Hull teaching room.">
           <figcaption><b>University of Hull</b>Doctoral College.</figcaption>
         </figure>
-        <figure class="plate">
+        <figure class="plate g5 portrait" style="--r:4/5;--pos:50% 62%">
           <img src="assets/img/city-st-georges.webp" width="600" height="1158" loading="lazy" decoding="async"
                alt="Huw Edwards standing beneath the City St George's, University of London sign, with autumn leaves on the ground.">
           <figcaption><b>City St George's</b>University of London.</figcaption>
         </figure>
-        <figure class="plate">
+        <figure class="plate g5 portrait" style="--r:4/5;--pos:50% 55%">
           <img src="assets/img/aberystwyth.webp" width="760" height="1013" loading="lazy" decoding="async"
                alt="Huw Edwards and a colleague beside a banner for the Department of International Politics at Aberystwyth University.">
           <figcaption><b>Aberystwyth University</b>Department of International Politics.</figcaption>
         </figure>
-        <figure class="plate">
+        <figure class="plate g7" style="--r:3/2;--pos:50% 50%">
           <img src="assets/img/coaching-manmet.webp" width="760" height="571" loading="lazy" decoding="async"
                alt="Huw Edwards working one-to-one with a researcher at a desk, beside a banner for Metropolis, a research-led think tank.">
           <figcaption><b>One-to-one coaching</b>Manchester Metropolitan University.</figcaption>
+        </figure>
+        <figure class="plate g12 wide" style="--r:3/2;--pos:50% 55%">
+          <img src="assets/img/teaching-1200.webp"
+               srcset="assets/img/teaching-760.webp 760w, assets/img/teaching-1200.webp 1200w"
+               sizes="(min-width: 720px) 92vw, 92vw"
+               width="1200" height="900" loading="lazy" decoding="async"
+               alt="Researchers working at laptops around tables in a seminar room during one of Huw's courses.">
+          <figcaption><b>In the seminar room</b>Researchers at work during a course session.</figcaption>
         </figure>
       </div>
     </div>
@@ -404,12 +401,14 @@
 
   <section class="section" id="questions">
     <div class="shell">
-      <div class="split">
-        <div class="reveal">
-          <p class="label rule-label">Questions</p>
-          <h2 style="font-size:var(--s-3)">Before you enquire</h2>
-          <p class="lede" style="margin-top:1rem">Anything not covered here, ask Huw directly.</p>
-          <p style="margin-top:1.4rem" class="sans"><a class="btn" href="#enquire">Enquire about a course</a></p>
+      <div class="split split--rev">
+        <div class="sticky reveal">
+          <div class="section__head section__head--flush">
+            <p class="label rule-label">Questions</p>
+            <h2>Before you enquire</h2>
+            <p class="lede">Anything not covered here, ask Huw directly.</p>
+          </div>
+          <p class="actions"><a class="btn" href="#enquire">Enquire about a course</a></p>
         </div>
         <div class="faq reveal">
           <details open>
@@ -443,25 +442,15 @@
 
   <section class="closing" id="enquire">
     <div class="shell">
-      <div class="split">
-        <div class="reveal">
-          <p class="label rule-label" style="color:var(--green-br)">Enquiries</p>
-          <h2>Talk to Huw about a course for your researchers</h2>
-          <p class="lede">Call or email Huw with a little about your researchers and what you would like them to achieve, whether that is a course at Parliament, on campus or online.</p>
-          <div style="display:flex;gap:.8rem;flex-wrap:wrap;margin-top:1.8rem">
-            <a class="btn" href="tel:+441600713021">01600 713021</a>
-            <a class="btn btn--ghost" href="mailto:huwedwards53@btinternet.com">Email Huw</a>
-            <a class="btn btn--ghost" href="https://www.linkedin.com/in/huw-edwards-4b445910/">LinkedIn</a>
-          </div>
-        </div>
-        <div class="reveal sans" style="font-size:var(--s--1);line-height:2">
-          <p style="opacity:.75;margin:0">Huw Edwards MBE<br>
-          Research impact and policy engagement training<br>
-          At the UK Parliament, at your university or online<br><br>
-          Telephone 01600 713021<br>
-          Mobile 07967 007701<br>
-          huwedwards53@btinternet.com</p>
-        </div>
+      <div class="section__head section__head--flush reveal">
+        <p class="label rule-label">Enquiries</p>
+        <h2>Talk to Huw about a course for your researchers</h2>
+        <p class="lede">Call or email Huw with a little about your researchers and what you would like them to achieve, whether that is a course at Parliament, on campus or online.</p>
+      </div>
+      <div class="actions reveal">
+        <a class="btn" href="tel:+441600713021">01600 713021</a>
+        <a class="btn btn--ghost" href="mailto:huwedwards53@btinternet.com">Email Huw</a>
+        <a class="btn btn--ghost" href="https://www.linkedin.com/in/huw-edwards-4b445910/">LinkedIn</a>
       </div>
     </div>
   </section>
@@ -484,9 +473,10 @@
       <div>
         <h3>The course</h3>
         <ul>
-          <li><a href="#course">What participants learn</a></li>
-          <li><a href="#course">Who it is for</a></li>
-          <li><a href="#course">Where it runs</a></li>
+          <li><a href="#course">The approach</a></li>
+          <li><a href="#course">Parliament and government</a></li>
+          <li><a href="#course">Briefing MPs</a></li>
+          <li><a href="#course">Devolution</a></li>
         </ul>
       </div>
       <div>
@@ -510,6 +500,7 @@
 <script>
 (function () {
   'use strict';
+  if (!('IntersectionObserver' in window)) return;
   var io = new IntersectionObserver(function (es) {
     es.forEach(function (en) {
       if (en.isIntersecting) { en.target.classList.add('is-in'); io.unobserve(en.target); }
