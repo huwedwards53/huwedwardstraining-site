@@ -226,6 +226,8 @@ main { counter-reset: part plate; }
 .themes ol { list-style: none; margin: .9rem 0 0; padding: 0; display: grid; gap: clamp(1rem, 2.5vw, 1.6rem); grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr)); counter-reset: theme; }
 .themes li { counter-increment: theme; border-top: 2px solid var(--green); padding-top: .9rem; font-size: var(--s-1); line-height: 1.4; }
 .themes li::before { content: '0' counter(theme); display: block; font-family: var(--sans); font-size: var(--s--1); font-weight: 700; letter-spacing: .12em; color: var(--green); margin-bottom: .4rem; }
+.themes--stack { margin-bottom: 0; }
+.themes--stack ol { grid-template-columns: minmax(0, 1fr); }
 
 /* ---------- the curriculum: an order-paper listing, numbered 2.1 to 2.4 ---------- */
 .curriculum { display: grid; border-top: 2px solid var(--ink); counter-reset: module; }
