@@ -41,18 +41,13 @@ The approach:
 
 What participants learn:
 - Parliament: how Government Bills pass through the Commons and the Lords;
-  drafting oral and written Parliamentary Questions; Select Committee
-  inquiries (written evidence, giving evidence, advising a committee); Early
-  Day Motions and All-Party Parliamentary Groups; House of Lords select
-  committees; Hansard, the Commons and Lords Libraries, POST and the Knowledge
+  Select Committee inquiries (written evidence, giving evidence, advising a
+  committee); House of Lords select committees; Hansard, the Commons and Lords Libraries, POST and the Knowledge
   Exchange Unit.
 - Government: identifying the key departments, Ministers and public bodies;
-  how civil servants advise and Ministers decide; responding to consultations;
-  departmental Chief Scientific Advisers; Areas of Research Interest; advisory
-  groups and scientific advisory committees.
+  how civil servants advise and Ministers decide; responding to consultations.
 - Briefing MPs: constituency, political and campaigning interests; a two-page
-  briefing led by the key facts; a clear answer to "what do you want me to
-  do?"; the MP's toolkit of letters, meetings, questions, motions and debates.
+  briefing led by the key facts.
 - Devolution: the parliaments and governments of Scotland, Wales and Northern
   Ireland; what is devolved; Metro Mayors and Mayoral Combined Authorities; for Welsh universities, the
   Senedd (Welsh Parliament) and the Welsh Government.
